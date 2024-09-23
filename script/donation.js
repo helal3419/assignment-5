@@ -102,3 +102,40 @@ document.getElementById('quota-movement').addEventListener('click',function (eve
 
 }) ;
 
+
+
+
+
+
+    // show donetion button and hide history button
+
+    document.getElementById('donetion-btn').addEventListener('click',function () {
+        document.getElementById('donetion-three-card').classList.remove('hidden' );
+        document.getElementById('all-history').classList.add('hidden');
+        
+    });
+
+    // show history button  and hidden donition button
+    document.getElementById('history-btn').addEventListener('click',function () {
+        document.getElementById('donetion-three-card').classList.add('hidden');
+        document.getElementById('all-history').classList.remove('hidden');
+        
+    });
+
+
+
+    
+    // show background colour donetion button and hide background coloue history button
+
+    document.getElementById('donetion-btn').addEventListener('click',function () {
+        document.getElementById('history-btn').classList.remove('bg-[#B4F461]' );
+        document.getElementById('donetion-btn').classList.add('bg-[#B4F461]');
+        
+    });
+
+    // show background color history button  and hidden background color donition button
+    document.getElementById('history-btn').addEventListener('click',function () {
+        document.getElementById('history-btn').classList.add('bg-[#B4F461]');
+        document.getElementById('donetion-btn').classList.remove('bg-[#B4F461]');
+        
+    });

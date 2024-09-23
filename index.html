@@ -52,8 +52,8 @@
          </nav>
         <!-- this is navebar end -->
          <div class="flex justify-center gap-5 py-8">
-            <button class=" btn-sm h-4  w-32 rounded-lg font-bold btn bg-[#B4F461]">Donation</button>
-            <button class=" btn-sm h-4  w-32 rounded-lg font-bold btn bg-[#B4F461]">History</button>
+            <button id="donetion-btn" class=" btn-sm h-4  w-32 rounded-lg font-bold border   " >Donation</button>
+            <button id="history-btn" class=" btn-sm h-4  w-32 rounded-lg font-bold border " >History</button>
             
          </div>
 
@@ -63,7 +63,7 @@
     <!-- this is main section start -->
     <main>
         <!-- this is 3 card content -->
-         <div class="">
+         <div id="donetion-three-card" class=" hidden">
             <!-- card number 01 -->
              <div class=" mb-4 px-3 md:px-36 lg:px-14">
                 <div class="hero  border rounded-lg">
@@ -208,6 +208,12 @@
              </div>
               
          </div>
+
+         <!-- this is history part start -->
+          <div id="all-history" class="hidden">
+            <h1>baby</h1>
+          </div>
+         <!-- this is history part end -->
      </main>
     <!-- this is main section end -->
     <script src="./script/blog.js"></script>
