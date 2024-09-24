@@ -25,7 +25,7 @@ document.getElementById('donation-card-btn-noakhali').addEventListener('click',f
 
     const donetionOne = getInputFieldValueById('donation-amount-one');
     const balance = getTextFieldValueById('Total-Balance');
-    const newBalance = balance - donetionOne;
+    let newBalance = balance - donetionOne;
 
     document.getElementById('donation-amount-one').value =""
     document.getElementById('Total-Balance').innerText = newBalance;
@@ -40,7 +40,7 @@ document.getElementById('donation-card-btn-noakhali').addEventListener('click',f
             const div = document.createElement('div');
             div.classList.add('border');
             div.innerHTML =`
-                 <p class='p-1 px-2'> You Donation : ${donetionOne} Taka at Noakhali, Bangladesh. Your Available Balance: ${newBalance}  </p>
+                 <p class='p-1 px-2'>  ${donetionOne} Taka you Donate for flood Noakhali, Bangladesh. Your Available Balance: ${newBalance}  </p>
                  <p class=' px-2'> transation time at</p>
                 <p class='p-1 px-2'>${new Date().toISOString()}</p>
                 <br>
@@ -82,7 +82,7 @@ document.getElementById('donation-card-btn-feni').addEventListener('click',funct
 
     const donetionOne = getInputFieldValueById('donation-amount-two');
     const balance = getTextFieldValueById('Total-Balance');
-    const newBalance = balance - donetionOne;
+    let newBalance = balance - donetionOne;
 
      document.getElementById('donation-amount-two').value =""
     document.getElementById('Total-Balance').innerText = newBalance;
@@ -99,7 +99,7 @@ document.getElementById('donation-card-btn-feni').addEventListener('click',funct
             const div = document.createElement('div');
             div.classList.add('border');
             div.innerHTML =`
-                 <p class='p-1 px-2'> You Donation : ${donetionOne} Taka at feni, Bangladesh. Your Available Balance: ${newBalance}  </p>
+                 <p class='p-1 px-2'>  ${donetionOne} Taka you Donate for flood feni, Bangladesh. Your Available Balance: ${newBalance}  </p>
                  <p class=' px-2'> transation time at</p>
                 <p class='p-1 px-2'>${new Date().toISOString()}</p>
                 <br>
@@ -140,7 +140,7 @@ document.getElementById('quota-movement').addEventListener('click',function (eve
 
     const donetionOne = getInputFieldValueById('donation-amount-three');
     const balance = getTextFieldValueById('Total-Balance');
-    const newBalance = balance - donetionOne;
+    let newBalance = balance - donetionOne;
 
      document.getElementById('donation-amount-three').value =""
     document.getElementById('Total-Balance').innerText = newBalance;
@@ -154,12 +154,15 @@ document.getElementById('quota-movement').addEventListener('click',function (eve
     }
 
 
-            const div = document.createElement('div');
+            const div = document.createElement('div'); 
             div.classList.add('border');
             div.innerHTML =`
-                 <p class='p-1 px-2'> You Donation : ${donetionOne} Taka at quota movement, Bangladesh. Your Available Balance: ${newBalance}  </p>
+                 <p class='p-1 px-2'>  ${donetionOne} Taka you Donate for Quota Movement, Bangladesh. Your Available Balance: ${newBalance}  </p>
                  <p class=' px-2'> transation time at</p>
-                <p class='p-1 px-2'>${new Date().toISOString()}</p>
+                <p class='p-1 px-2'>${new Date().toISOString()  }</p>
+                
+                
+                
                 <br>
 
                            `
