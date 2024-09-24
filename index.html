@@ -21,10 +21,10 @@
 </head>
 <body class="Lexend-font">
     <!-- this is header section start -->
-     <header class=" mx-auto bg-[#FFFFFF]">
+     <header class="  mx-auto bg-[#F9F7F3] fixed w-full  z-50 backdrop-blur-lg">
         
         <!-- this is navebar start -->
-         <nav class="bg-[#F9F7F3] py-5">
+         <nav class="bg-[#fdfaec] py-5">
             <!-- nav 3 continer start -->
              <div class="flex justify-between gap-4  justify-center items-center p-1 md:px-32">
                 <!-- number 1 -->
@@ -56,12 +56,13 @@
             <button id="history-btn" class=" btn-sm h-4  w-32 rounded-lg font-bold border " >History</button>
             
          </div>
+         
 
-     </header>
+     </header> 
     <!-- this is header section end -->
  
     <!-- this is main section start -->
-    <main>
+    <main class=" pt-48 ">
         <!-- this is 3 card content -->
          <div id="donetion-three-card" class=" hidden">
             <!-- card number 01 -->
@@ -210,10 +211,15 @@
          </div>
 
          <!-- this is history part start -->
-          <div id="all-history" class="hidden">
-            <h1>baby</h1>
+          <div class="flex justify-center">
+            <div id="all-history" class="hidden h-auto w-96 border rounded-md bg-[#f3f1f1]  ">
+                <h1 class="text-center text-xl font-bold pt-2 ">Transaction History</h1>
+                <div class="divider"></div>
+
+              </div>
+             <!-- this is history part end -->
           </div>
-         <!-- this is history part end -->
+
      </main>
     <!-- this is main section end -->
     <script src="./script/blog.js"></script>

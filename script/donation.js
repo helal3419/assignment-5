@@ -9,6 +9,7 @@ document.getElementById('donation-card-btn-noakhali').addEventListener('click',f
 
     document.getElementById('Account-Balance-one').innerText = newBalance;
 
+
     if (donetionOne<=0   ) {
         alert(' Donetion faild please try again.')
         
@@ -26,11 +27,33 @@ document.getElementById('donation-card-btn-noakhali').addEventListener('click',f
     const balance = getTextFieldValueById('Total-Balance');
     const newBalance = balance - donetionOne;
 
+    document.getElementById('donation-amount-one').value =""
     document.getElementById('Total-Balance').innerText = newBalance;
+
+    if (donetionOne>balance   ) {
+        alert(' Donetion faild please try again.')
+        
+        
+    }
+
+
+            const div = document.createElement('div');
+            div.classList.add('border');
+            div.innerHTML =`
+                 <p class='p-1 px-2'> You Donation : ${donetionOne} Taka at Noakhali, Bangladesh. Your Available Balance: ${newBalance}  </p>
+                 <p class=' px-2'> transation time at</p>
+                <p class='p-1 px-2'>${new Date().toISOString()}</p>
+                <br>
+
+                           `
+                           document.getElementById('all-history').appendChild(div);
+            //  this is transation history end
 
  
 
 }) ;
+
+
 
 
 // donation card number 02
@@ -61,11 +84,34 @@ document.getElementById('donation-card-btn-feni').addEventListener('click',funct
     const balance = getTextFieldValueById('Total-Balance');
     const newBalance = balance - donetionOne;
 
+     document.getElementById('donation-amount-two').value =""
     document.getElementById('Total-Balance').innerText = newBalance;
+    
+
+
+    if (donetionOne>balance   ) {
+        alert(' Donetion faild please try again.')
+        
+        
+    }
+
+
+            const div = document.createElement('div');
+            div.classList.add('border');
+            div.innerHTML =`
+                 <p class='p-1 px-2'> You Donation : ${donetionOne} Taka at feni, Bangladesh. Your Available Balance: ${newBalance}  </p>
+                 <p class=' px-2'> transation time at</p>
+                <p class='p-1 px-2'>${new Date().toISOString()}</p>
+                <br>
+
+                           `
+                           document.getElementById('all-history').appendChild(div);
+            //  this is transation history end
 
  
 
 }) ;
+
 
 
 // donation card number 03
@@ -96,11 +142,34 @@ document.getElementById('quota-movement').addEventListener('click',function (eve
     const balance = getTextFieldValueById('Total-Balance');
     const newBalance = balance - donetionOne;
 
+     document.getElementById('donation-amount-three').value =""
     document.getElementById('Total-Balance').innerText = newBalance;
+    
+
+
+    if (donetionOne>balance   ) {
+        alert(' Donetion faild please try again.')
+        
+        
+    }
+
+
+            const div = document.createElement('div');
+            div.classList.add('border');
+            div.innerHTML =`
+                 <p class='p-1 px-2'> You Donation : ${donetionOne} Taka at quota movement, Bangladesh. Your Available Balance: ${newBalance}  </p>
+                 <p class=' px-2'> transation time at</p>
+                <p class='p-1 px-2'>${new Date().toISOString()}</p>
+                <br>
+
+                           `
+                           document.getElementById('all-history').appendChild(div);
+            //  this is transation history end
 
  
 
 }) ;
+
 
 
 
